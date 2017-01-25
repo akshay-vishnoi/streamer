@@ -1,0 +1,13 @@
+development: &development
+  server: http://localhost:8000/faye
+  secret_token: 711ad3cfe673cdb6d64b3fb7b869621468b0ac4fb2c530a5593fcb47045430681cc734c85a8a130a7e5c08b83f1b4cc320364f17186f8eeaec6e6d721653a3d1
+test:
+  server: http://test.example/faye
+  secret_token: bf30f0278f6a2a85ad5bce45218ee5eb20c922f393c66105ca475e5856a7deeb2a30edd356757f9bbb7deac53e3244af36a43f2032ab7a2bfdb7e056fed572cc
+production:
+  server: http://localhost:8000/faye
+  secret_token: 02c7d36766ea044ab3a881c42b8794c65b2de5ba259a14cff703aa2098c025065fdd6fed805959903adc6ab6bb67c110fde0562509a5dbc0726577291c06901e
+staging:
+  <<: *development
+pre_production:
+  <<: *development

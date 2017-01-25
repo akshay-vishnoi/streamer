@@ -1,0 +1,14 @@
+# README
+
+## PreRequisites
+
+- Ruby >= 2.2.4
+- bundler gem
+
+
+## Commands to run
+
+1. bundle install
+2. bundle exec rails s
+3. bundle exec rackup private_pub.ru -s thin -E production -p8000
+4. http://localhost:3000 in browser

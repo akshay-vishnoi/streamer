@@ -1,0 +1,10 @@
+<div id='data-container'>
+
+</div>
+
+<%= content_tag :script, type: 'text/javascript' do %>
+  $(function() {
+    Channel.init('<%= PrivatePub.config[:server] %>');
+    Channel.subscribe(['/subscribe', '/general']);
+  });
+<% end %>
